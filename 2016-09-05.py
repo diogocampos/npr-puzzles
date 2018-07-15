@@ -11,8 +11,7 @@ import util
 
 
 def main():
-    wordlist = list(util.get_wordlist())
-    if not wordlist: return 1
+    wordlist = list(util.all_wordlists())
 
     for word in wordlist:
         if is_possible_solution(word, wordlist):
@@ -20,12 +19,9 @@ def main():
 
 
 def is_possible_solution(word, wordlist):
-    word = word.lower()
-    return (
-        len(word) == 5 and
+    return (len(word) is 5 and
         'rn' in word and
-        counterpart(word) in wordlist
-        )
+        counterpart(word) in wordlist)
 
 
 def counterpart(word):
@@ -33,8 +29,7 @@ def counterpart(word):
 
 
 if __name__ == '__main__':
-    import sys
-    sys.exit(main())
+    main()
 
 
 # Solution: 'stern' and 'stem'

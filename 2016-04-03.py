@@ -11,20 +11,13 @@ import util
 
 
 def main():
-    wordlist = util.get_wordlist()
-    if not wordlist: return 1
-
-    for word in wordlist:
+    for word in util.all_wordlists():
         if is_solution(word): print(word)
 
 
 def is_solution(word):
-    word = word.lower()
-    return (
-        len(word) == 5 and
-        word.isalpha() and
-        number(word[0]) == sum(number(c) for c in word[1:])
-        )
+    return (len(word) is 5 and
+        number(word[0]) == sum(number(c) for c in word[1:]))
 
 
 def number(letter):
@@ -32,8 +25,7 @@ def number(letter):
 
 
 if __name__ == '__main__':
-    import sys
-    sys.exit(main())
+    main()
 
 
 # Solutions: sadie, table, whack, zebra
