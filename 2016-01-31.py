@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
-# NPR Sunday Puzzle, 31 January 2016
+"""
+NPR Sunday Puzzle, 31 January 2016
 
-# Find two pairs of (country, city) in the Middle East,
-# such that both pairs contain the same 12 letters
+Find two pairs of (country, city) in the Middle East,
+such that both pairs contain the same 12 letters.
+"""
 
 
 COUNTRIES = [

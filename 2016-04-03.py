@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 
-# NPR Sunday Puzzle, 3 April 2016
+"""
+NPR Sunday Puzzle, 3 April 2016
 
-# Assuming each letter from 'a'..'z' corresponds to the numbers 1..26,
-# find a 5-letter word where the 1st letter equals the "sum" of the other 4
+Assuming each letter from 'a'..'z' corresponds to the numbers 1..26,
+find a 5-letter word where the 1st letter equals the "sum" of the other 4.
 
-# (takes a whitespace-delimited list of words as input from stdin)
+(Reads a whitespace-delimited list of words as input from stdin.)
+"""
 
 
 import sys

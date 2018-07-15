@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 
-# NPR Sunday Puzzle, 5 September 2016
+"""
+NPR Sunday Puzzle, 5 September 2016
 
-# Find a 5-letter word containing 'rn' such that
-# changing 'rn' to 'm' results in its opposite
+Find a 5-letter word containing 'rn' such that
+changing 'rn' to 'm' results in its opposite.
 
-# (takes a whitespace-delimited list of words as input from stdin)
+(Reads a whitespace-delimited list of words as input from stdin.)
+"""
 
 
 import sys
