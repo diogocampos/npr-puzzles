@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# NPR Sunday Puzzle, 5 Sep 2016
+# NPR Sunday Puzzle, 5 September 2016
 
 # Find a 5-letter word containing 'rn' such that
 # changing 'rn' to 'm' results in its opposite
@@ -28,7 +28,7 @@ def is_possible_solution(word, wordlist):
         len(word) == 5 and
         'rn' in word and
         counterpart(word) in wordlist
-    )
+        )
 
 
 def counterpart(word):

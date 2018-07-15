@@ -1,80 +1,26 @@
 #!/usr/bin/env python
 
-# NPR Sunday Puzzle, 31 Jan 2016
+# NPR Sunday Puzzle, 31 January 2016
 
 # Find two pairs of (country, city) in the Middle East,
 # such that both pairs contain the same 12 letters
 
 
 COUNTRIES = [
-  'arabia',
-  'bahrain',
-  'cyprus',
-  'egypt',
-  'emirates',
-  'iran',
-  'iraq',
-  'israel',
-  'jordan',
-  'kuwait',
-  'lebanon',
-  'oman',
-  'palestine',
-  'qatar',
-  'syria',
-  'turkey',
-  'yemen',
-]
+    'arabia', 'bahrain', 'cyprus', 'egypt', 'emirates', 'iran', 'iraq',
+    'israel', 'jordan', 'kuwait', 'lebanon', 'oman', 'palestine', 'qatar',
+    'syria', 'turkey', 'yemen',
+    ]
 
 CITIES = [
-  'abudhabi',
-  'acre',
-  'adana',
-  'aden',
-  'aleppo',
-  'alexandria',
-  'amman',
-  'ankara',
-  'aqaba',
-  'ashur',
-  'aswan',
-  'asyut',
-  'baghdad',
-  'beirut',
-  'bursa',
-  'bushehr',
-  'byblos',
-  'cairo',
-  'damascus',
-  'doha',
-  'dubai',
-  'fallujah',
-  'gaza',
-  'giza',
-  'istanbul',
-  'izmir',
-  'jeddah',
-  'jerash',
-  'jericho',
-  'jerusalem',
-  'luxor',
-  'manama',
-  'mecca',
-  'medina',
-  'mosul',
-  'muharraq',
-  'muscat',
-  'nicosia',
-  'petra',
-  'rafah',
-  'ramallah',
-  'riyadh',
-  'sanaa',
-  'tehran',
-  'telaviv',
-  'tikrit',
-  'suez',
-]
+    'abudhabi', 'acre', 'adana', 'aden', 'aleppo', 'alexandria', 'amman',
+    'ankara', 'aqaba', 'ashur', 'aswan', 'asyut', 'baghdad', 'beirut', 'bursa',
+    'bushehr', 'byblos', 'cairo', 'damascus', 'doha', 'dubai', 'fallujah',
+    'gaza', 'giza', 'istanbul', 'izmir', 'jeddah', 'jerash', 'jericho',
+    'jerusalem', 'luxor', 'manama', 'mecca', 'medina', 'mosul', 'muharraq',
+    'muscat', 'nicosia', 'petra', 'rafah', 'ramallah', 'riyadh', 'sanaa',
+    'tehran', 'telaviv', 'tikrit', 'suez',
+    ]
 
 
 def main():
