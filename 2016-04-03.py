@@ -5,18 +5,17 @@ NPR Sunday Puzzle, 3 April 2016
 
 Assuming each letter from 'a'..'z' corresponds to the numbers 1..26,
 find a 5-letter word where the 1st letter equals the "sum" of the other 4.
-
-(Reads a whitespace-delimited list of words as input from stdin.)
 """
 
-
-import sys
+import util
 
 
 def main():
-    for line in sys.stdin:
-        for word in line.split():
-            if is_solution(word): print(word)
+    wordlist = util.get_wordlist()
+    if not wordlist: return 1
+
+    for word in wordlist:
+        if is_solution(word): print(word)
 
 
 def is_solution(word):
@@ -33,7 +32,8 @@ def number(letter):
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    sys.exit(main())
 
 
 # Solutions: sadie, table, whack, zebra

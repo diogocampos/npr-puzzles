@@ -5,19 +5,14 @@ NPR Sunday Puzzle, 5 September 2016
 
 Find a 5-letter word containing 'rn' such that
 changing 'rn' to 'm' results in its opposite.
-
-(Reads a whitespace-delimited list of words as input from stdin.)
 """
 
-
-import sys
+import util
 
 
 def main():
-    wordlist = []
-    for line in sys.stdin:
-        for word in line.split():
-            wordlist.append(word)
+    wordlist = list(util.get_wordlist())
+    if not wordlist: return 1
 
     for word in wordlist:
         if is_possible_solution(word, wordlist):
@@ -38,7 +33,8 @@ def counterpart(word):
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    sys.exit(main())
 
 
 # Solution: 'stern' and 'stem'

@@ -7,7 +7,6 @@ Find two pairs of (country, city) in the Middle East,
 such that both pairs contain the same 12 letters.
 """
 
-
 COUNTRIES = [
     'arabia', 'bahrain', 'cyprus', 'egypt', 'emirates', 'iran', 'iraq',
     'israel', 'jordan', 'kuwait', 'lebanon', 'oman', 'palestine', 'qatar',
